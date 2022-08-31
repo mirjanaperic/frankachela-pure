@@ -1,0 +1,96 @@
+.clients {
+    width: 100%;
+    position: relative;
+    @media only screen and (min-width: 768px) {
+        padding-bottom: 200px;
+    }
+    @media only screen and (max-width: 767px) {
+        padding-bottom: 75px;
+     }
+}
+
+.clients__inner {
+    padding: 184px 0 0;
+    max-width: 85%;
+    margin: 0 auto;
+    @media only screen and (max-width: 1200px) {
+        padding: 84px 0 0;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        max-width: 80%;
+    }
+    @media only screen and (max-width: 767px) {
+       padding: 60px 0 75px;
+    }
+}
+
+.clients__text-wrap {
+    display: flex;
+    margin-bottom: 110px;
+    @media only screen and (max-width: 767px) {
+       flex-wrap: wrap;
+       margin-bottom: 20px;
+    }
+}
+
+.clients__title {
+    font-size: clamp(18px, 2.2vw, 32px);
+    font-weight: $medium;
+    margin-right: 100px;
+    flex: 0 0 20%;
+    @media only screen and (max-width: 767px) {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+    @media only screen and (min-width: 992px) and (max-width: 1024px) {
+        font-size: 32px;
+    }
+}
+
+.clients__text {
+    flex: 0 0 60%;
+    @media only screen and (max-width: 767px) {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+}
+
+.clients__images {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    animation: chyron 17s infinite linear;
+    width: 10000px;
+    min-height: 250px;
+
+    @media only screen and (min-width: 1200px) {
+        &:hover {
+            animation-play-state: paused;
+        }
+    }
+    &.paused {
+        animation-play-state: paused;
+    }
+}
+
+.clients__img-wrap {
+    flex: 0 0 150px;    
+    max-width: 150px;
+    margin-right: 90px;
+}
+
+.clients__img {
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes chyron {
+  100% {
+      transform: translate(-2400px);
+  }
+}
+
+.marquee {
+    overflow: hidden;
+}

@@ -1,0 +1,252 @@
+.contact {
+    width: 100%;
+    position: relative;
+    background-color: $card-color-1;
+    @media only screen and (max-width: 1199px) {
+        background-color: $secondary-color;
+    }
+}
+
+.contact__inner {
+    @media only screen and (min-width: 1200px) {
+        padding: 165px 70px 165px;
+    }
+    @media only screen and (max-width: 991px) {
+        padding: 0;
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
+    }
+}
+
+.contact__text-inner {
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+       padding: 0 120px;
+    }
+    @media only screen and (max-width: 991px) {
+        padding: 0 35px;
+    }
+}
+
+.contact__text-img {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+    @media only screen and (max-width: 1199px) {
+        flex-wrap: wrap;
+        margin-bottom: 85px;
+    }
+}
+
+.contact__title {
+    margin-bottom: 2.8rem;
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 3.8rem;
+    }
+}
+
+.contact__text-wrap {
+    max-width: 57%;
+    flex: 0 0 57%;
+    @media only screen and (max-width: 1199px) {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+}
+
+.contact__text--desk {
+    max-width: clamp(768px, 47vw, 675px);
+    @media only screen and (max-width: 1199px) {
+       display: none;
+    }
+}
+
+.contact__text--mob {
+    @media only screen and (min-width: 1200px) {
+       display: none;
+    }
+    @media only screen and (max-width: 1199px) {
+        max-width: 85%;
+     }
+}
+
+.contact__img-wrap {
+    max-width: 47%;
+    flex: 0 0 47%;
+    position: relative;
+    img {
+        position: absolute;
+        transition: opacity .3s ease-in;
+        }
+    img + img { 
+        opacity: 0; 
+    }
+    @media only screen and (max-width: 1199px) {
+        max-width: 100%;
+        flex: 0 0 100%;
+        min-height: 40vh;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        min-height: 50vh;
+     }
+    @media only screen and (orientation: landscape) and (max-width: 1199px) {
+        min-height: 50vw;
+    }
+}
+
+.contact__img {
+    max-height: 690px;
+    object-fit: contain;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: opacity .3s ease-in;
+    height: 100%;
+    @media only screen and (max-width: 1199px) {
+        display: block;
+        margin-bottom: 48px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+       bottom: 75px;
+       margin-bottom: 0;
+    }
+    @media only screen and (max-width: 520px) {
+        max-height: 300px;
+    }
+}
+
+.form {
+    width: 100%;
+    @media only screen and (max-width: 1199px) {
+        background-color: $card-color-1;
+        padding: 90px 60px 80px;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        padding: 90px 120px 80px;
+    }
+}
+
+.form__inner {
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-width: 1199px) {
+        flex-wrap: wrap;
+    }
+}
+
+.form__part {
+    max-width: 48%;
+    flex: 0 0 48%;
+    @media only screen and (max-width: 1199px) {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+}
+
+.form__label {
+    display: block;
+    font-size: clamp(17px, 2.2vw, 32px); 
+    margin-bottom: 25px;
+    @media only screen and (max-width: 1199px) {
+        margin-bottom: 15px;
+    }
+    @media only screen and (min-width: 992px) and (max-width: 1024px) {
+        font-size: 30px;
+    }
+}
+
+.form__input {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid $main-color;
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    background-color: $card-color-1;
+    @media only screen and (min-width: 1200px) {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    @media only screen and (max-width: 1199px) {
+        margin-bottom: 25px;
+        padding-bottom: 10px;
+    }
+}
+
+.form__textarea {
+    width: 100%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid $main-color;
+    padding-bottom: 55px;
+    font-size: clamp(12px, 1.25vw, 20px);
+    resize: none;
+    border-radius: 0;
+	-webkit-border-radius: 0;
+    background-color: $card-color-1;
+    font-family: $font-default-light;
+    line-height: 1.2;
+    @media only screen and (max-width: 1199px) {
+        margin-bottom: 25px;
+        padding-bottom: 10px;
+    }
+}
+
+.form__btn-wrap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form__btn {
+    font-family: $font-secondary-italic;
+    font-size: clamp(27px, 3.3vw, 48px);
+    background-color: transparent;
+    border: 0;
+    color: $main-color;
+    display: flex;
+    padding: 10px 15px;
+    position: relative;
+    &:focus {
+        &:before {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            bottom: 5px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $main-color;
+            opacity: 1;
+            transition: opacity ease-in-out 0.5s, width ease-in-out 0.5s;
+        }
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 60%;
+        bottom: 5px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $main-color;
+        opacity: 0;
+        transition: opacity ease-in-out 0.5s, width ease-in-out 0.5s;
+    }
+    &:hover {
+        &::before {
+            width: 100%;
+            opacity: 1;
+        }
+    }
+    @media only screen and (min-width: 992px) and (max-width: 1024px) {
+        font-size: 48px;
+    }
+}
+
+input:invalid, textarea:invalid {
+    background-color: transparent;
+}

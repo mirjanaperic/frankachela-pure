@@ -61,7 +61,7 @@ function getInputData() {
     return dataToPost;
 }
 
-// image animtions
+// image animations
 var current = 0,
     slides = document.getElementsByClassName("js-img-about");
 

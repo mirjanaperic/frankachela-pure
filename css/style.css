@@ -1003,7 +1003,7 @@ input:invalid, textarea:invalid {
 
 @keyframes chyron {
   100% {
-    transform: translate(-2400px); } }
+    transform: translate(-4500px); } }
 .marquee {
   overflow: hidden; }
 

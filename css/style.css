@@ -82,6 +82,16 @@ img {
   object-fit: contain; }
 
 .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+.hidden {
   padding: 10px;
   position: absolute;
   border: 1px solid #000;
@@ -93,7 +103,7 @@ img {
   color: #000;
   top: auto;
   z-index: 9; }
-  .sr-only:focus {
+  .hidden:focus {
     transform: translateY(0); }
 
 .back-to-top {
